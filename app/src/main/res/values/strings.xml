@@ -6,4 +6,6 @@
 
     <!-- string to show the text " Dont have an account-->
     <string name="sign_up"><font color='c4c4c4'>Dont have an account? </font><b>Sign up.</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
