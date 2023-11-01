@@ -36,6 +36,20 @@ public class HomeFragment extends Fragment {
                         R.drawable.rosas
                 )
         );
+        lstHomeContents.add(
+                new HomeContents(
+                        "Poppies",
+                        "Amaro da Serra",
+                        R.drawable.poppies
+                )
+        );
+        lstHomeContents.add(
+                new HomeContents(
+                        "Lótus do campo",
+                        "Santana do Parnaíba",
+                        R.drawable.lotus
+                )
+        );
 
         HomeAdapter adapter = new HomeAdapter(getContext(), lstHomeContents);
 
