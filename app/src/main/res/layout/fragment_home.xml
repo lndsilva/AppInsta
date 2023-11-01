@@ -11,26 +11,55 @@
         android:layout_height="150dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_marginLeft="150dp"
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo" />
+
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:text="Instagram"
-                android:textSize="20sp" />
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:entries="@array/profileSpinner"
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_margin="10sp"
-                android:src="@drawable/baseline_electric_meter" />
+                />
 
-        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="310dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/baseline_favorite_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/baseline_electric_meter" />
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
         <androidx.recyclerview.widget.RecyclerView
