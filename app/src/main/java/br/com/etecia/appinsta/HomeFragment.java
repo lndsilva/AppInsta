@@ -18,7 +18,9 @@ public class HomeFragment extends Fragment {
 
     List<HomeContents> lstHomeContents;
 
-    RecyclerView idRecyclerView;
+    List<ProfileHor> lstProfHor;
+
+    RecyclerView idRecyclerView, idRecyclerProfileHor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,7 +29,60 @@ public class HomeFragment extends Fragment {
 
         idRecyclerView = view.findViewById(R.id.idRecyclerViewHomeProfile);
 
+        idRecyclerProfileHor = view.findViewById(R.id.idRecProfiles);
+
+
         lstHomeContents = new ArrayList<>();
+        lstProfHor = new ArrayList<>();
+
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
+        lstProfHor.add(
+                new ProfileHor(
+                        "Seu story",
+                        R.drawable.usu
+                )
+        );
 
         lstHomeContents.add(
                 new HomeContents(
@@ -53,9 +108,17 @@ public class HomeFragment extends Fragment {
 
         HomeAdapter adapter = new HomeAdapter(getContext(), lstHomeContents);
 
+        ProfileAdapterHorizontal adapterHorizontal = new ProfileAdapterHorizontal(getContext(), lstProfHor);
+
         idRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, true));
 
+        idRecyclerProfileHor.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, true));
+
+        idRecyclerProfileHor.hasFixedSize();
+
         idRecyclerView.hasFixedSize();
+
+        idRecyclerProfileHor.setAdapter(adapterHorizontal);
 
         idRecyclerView.setAdapter(adapter);
 
