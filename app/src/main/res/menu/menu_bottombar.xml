@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:iconTint="?attr/colorControlNormal"
+        android:id="@+id/accelerator"
+        android:icon="@drawable/baseline_double_arrow"
+        android:title="Accelerator"
+        android:contentDescription="accelerator"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:iconTint="?attr/colorControlNormal"
+        android:id="@+id/rotation"
+        android:icon="@drawable/baseline_3d_rotation"
+        android:title="Rotation"
+        android:contentDescription="rotation"
+        app:showAsAction="ifRoom"/>
+
+    <item
+
+        android:id="@+id/dashboard"
+        android:icon="@drawable/baseline_dashboard"
+        android:title="Dashboard"
+        android:contentDescription="dashboard"
+        app:showAsAction="ifRoom"/>
+
+</menu>
